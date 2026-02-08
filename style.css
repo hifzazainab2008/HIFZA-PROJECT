@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    letter-spacing: .03rem;
+    color: var(--black-market);
+      font-family: "Rubik", sans-serif;
+}
+:root{
+    --white: #fff;
+    --black-market: #231e41;
+    --light-black-market: #6f6f87;
+    --saffaron: #f5c332;
+    
+    --dark-gray: #f2f3f5;
+    --light-gray: #f9fafc; 
+}
+/* BASIC STYLING */
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height:auto ;
+    object-fit: cover;
+}
+/* Navbar Styling */
+.navbar{
+    background: rgba(225, 225, 225, .92);
+        backdrop-filter: blur(8px);
+    height: 7.5rem;
+    border-color: var(--dark-gray);
+    border-width: .063rem 0 .063rem 0;
+    border-style:solid ;
+    background-color: #fff;
+   
+}
+.navbar-brand{
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--black-market);
+
+}
+
+.nav-link{
+    color: var(--black-market);
+    font-size: .9rem;
+}
+.nav-item{
+    padding-left: 1.5rem;
+}
+
+.fa-bowl-food ,
+.active,
+.nav-link:hover
+{
+    color: var(--saffaron) !important;
+}
+.nav-icon{
+    font-size: 1.2rem;
+    padding-inline:  .5rem;
+}
+.fa-bag-shopping{
+    background-color: var(--dark-gray);
+     font-size: 1.1rem;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:990px){
+    .navbar-collapse{
+        position: absolute;
+        top:  0;
+        left: 0;
+        width: 100%;
+        background:rgba(225, 225, 225, .92) ;
+    backdrop-filter: blur(8px);
+        height: calc(100vh -55.6rem);
+        padding-top: 2rem;
+        margin-top: 5.6rem;
+        border: 0;
+        z-index: 99;
+        opacity: 0;
+ pointer-events: none;
+ transform: translateY(60px);
+
+        
+    }
+   
+    .navbar-nav {
+        align-items: center;
+    gap: 1rem;
+
+    }
+     .collapse{
+        opacity: 1;
+        pointer-events: all;
+        transform: translateY(0px);
+    }
+    .navbar{
+        height: 5.6rem;
+    }
+}
