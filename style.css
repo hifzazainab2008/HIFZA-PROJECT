@@ -6,6 +6,9 @@
       font-family: "Rubik", sans-serif;
       /* border: .1rem solid red; */
 }
+html {
+  scroll-behavior: smooth;
+}
 :root{
     --white: #fff;
     --black-market: #231e41;
